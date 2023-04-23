@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML CRASH COURSE</title>
+</head>
+
+<!-- This is the file for the crash course by Brad Traversy -->
+
+<!-- This is a paragraph. This is a block level element -->
+
+<body>
+
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, eaque! </p>
+
+
+<a href="https://www.w3schools.com/html/html_form_attributes_form.asp" target="_blank"> This will go to w3schools </a>
+
+        
+<!-- Creating lists. There are 2 types of list, unordered list and ordered list-->
+
+<!-- Unordered list -->
+
+<ul>
+        <li> Coffee </li>
+        <li> Tea </li>
+        <li> Math  </li>
+</ul>
+
+<!-- Ordered List -->
+
+<ol type="A">
+        <li> Coffee </li>
+        <li> Tea </li>
+        <li> Math  </li>
+</ol>
+
+<!-- Creating tables now -->
+
+  <table>
+        
+        <thead>
+                <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Age</th>
+                </tr>
+        </thead>
+
+        <tbody>
+                <tr>
+                        <td>Shubham</td>
+                        <td>Shubham.something@gmail.com</td>
+                        <td>23</td>
+                </tr>
+                <tr>
+                        <td>John</td>
+                        <td>John.something@gmail.com</td>
+                        <td>24</td>
+                </tr>
+                <tr>
+                        <td>Brad</td>
+                        <td>Brad.something@gmail.com</td>
+                        <td>2253</td>
+                </tr>
+        </tbody>
+  </table>
+
+  <!-- Forms -->
+
+<!-- action means to send the data to the server side, process.php is just a file name
+     method means a way to send the data. Post is more secure way than get           
+-->
+
+  <br>
+
+  <hr>
+
+  <form action="process.php" method="post">
+
+<!-- labels are inline elements that is why they show in the same line.
+     I am going to put a div in it as div is the block level element, so it will
+     be on another line. -->
+
+     <!-- Placeholder and the value tags are similar but before html 5 if you 
+          used the value tag the moment someone click on the field we have to 
+          physically remove the predefined value that is why we use placeholder   
+-->
+
+     <div>
+        <label>First Name</label>
+        <input type="text" name="first-name">
+     </div>
+
+     <br>
+
+     <div>
+        
+        <label>Last Name</label>
+        <input type="text" name="Last-name">
+        
+      </div>
+        
+      <br>
+
+      <div>
+        
+        <label>Email</label>
+        <input type="email" name="email">
+        
+      </div>
+        
+      <br>
+
+      <div>
+        
+        <label>Message</label>
+        <textarea name="Message" placeholder="Enter your message" ></textarea>
+        
+      </div>
+      
+      <!-- adding a drop down list -->
+      
+      <label>Gender</label>
+
+      <select name="Gender">  
+
+        <option value="male"> Male </option>
+
+        <option value="female"> Female </option>
+
+        <option value="Other"> Other </option>
+
+      </select>
+
+
+
+      <div>
+        
+        <label>Age:</label>
+        <input type="number" name="Age" value="30">
+        
+      </div>
+        
+      <br>
+
+
+      <div>
+        
+        <label>Birthday</label>
+        <input type="date" name="Birthday">
+        
+      </div>
+        
+      <br>
+
+      <input type="submit" name="submit" value="Submit">
+
+</form>
+
+
+<!-- Button -->
+
+<button type="button">Click me </button>
+
+
+</body>
+</html>
